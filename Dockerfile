@@ -23,6 +23,7 @@ RUN dnf update -y && \
     git \
     python3 \
     tmux \
+    fzf \
     && dnf clean all
 
 # Set the default shell to bash
