@@ -30,11 +30,11 @@ RUN dnf install -y --setopt=install_weak_deps=false --nodocs \
     # Clean dnf cache
     && dnf clean all \
     # Create a non-root user
-    && useradd --create-home --shell /bin/bash sak
+    && useradd --create-home --shell /bin/bash welt
 
 # Switch to the non-root user
-USER sak
-WORKDIR /home/sak
+USER welt
+WORKDIR /home/welt
 
 # Set the default shell to bash
 CMD ["/bin/bash"]
