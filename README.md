@@ -28,10 +28,10 @@ This will launch a container with the default shell set to `bash`.
 
 ### Accessing VMs with SSH
 
-You can mount your local `.ssh` directory as a volume to securely access your virtual machines (VMs) from within the container:
+You can mount your local `.ssh` directory as a volume to securely access your virtual machines (VMs) from within the container. The container runs as the non-root user `sak`.
 
 ```bash
-docker run -it -v ~/.ssh:/root/.ssh ghcr.io/eltifi/sak:latest
+docker run -it -v ~/.ssh:/home/sak/.ssh ghcr.io/eltifi/sak:latest
 ```
 
 This allows you to use tools like `ssh` and `rsync` to connect to and manage your VMs seamlessly.
