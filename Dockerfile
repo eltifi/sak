@@ -4,26 +4,25 @@ FROM fedora:42
 # Install basic tools
 RUN dnf update -y && \
     dnf install -y \
-    bash \
-    curl \
-    wget \
-    nano \
-    git \
-    python3 \
-    nano \
-    net-tools \
-    iputils \
-    bind-utils \
-    tcpdump \
-    htop \
-    jq \
-    openssh \
-    rsync \
-    ncdu \
-    git \
-    python3 \
-    tmux \
-    fzf \
+    bash        \
+    bind-utils  \
+    curl        \
+    fzf         \
+    git         \
+    htop        \
+    iputils     \
+    jq          \
+    nano        \
+    ncdu        \
+    net-tools   \
+    nodejs      \
+    openssh     \
+    python3     \
+    rsync       \
+    tcpdump     \
+    tmux        \
+    wget        \
+    && npm install -g pnpm \
     && dnf clean all
 
 # Set the default shell to bash

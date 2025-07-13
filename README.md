@@ -13,7 +13,7 @@ docker pull ghcr.io/eltifi/sak:latest
 This image includes the following tools:
 - **System Utilities**: `bash`, `nano`, `htop`, `ncdu`, `tmux`, `fzf`
 - **Networking Tools**: `curl`, `wget`, `net-tools`, `iputils`, `bind-utils`, `tcpdump`
-- **Development Tools**: `git`, `python3`
+- **Development Tools**: `git`, `python3`, `nodejs`, `pnpm`
 - **Other Utilities**: `jq`, `openssh`, `rsync`
 
 ## Usage
