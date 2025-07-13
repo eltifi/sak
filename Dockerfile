@@ -17,6 +17,7 @@ RUN dnf install -y --setopt=install_weak_deps=false --nodocs \
     ncdu         \
     net-tools    \
     nodejs       \
+    npm          \
     openssh      \
     python3      \
     rsync        \
@@ -29,11 +30,11 @@ RUN dnf install -y --setopt=install_weak_deps=false --nodocs \
     # Clean dnf cache
     && dnf clean all \
     # Create a non-root user
-    && useradd --create-home --shell /bin/bash welt
+    && useradd --create-home --shell /bin/bash sak
 
 # Switch to the non-root user
-USER welt
-WORKDIR /home/welt
+USER sak
+WORKDIR /home/sak
 
 # Set the default shell to bash
 CMD ["/bin/bash"]
